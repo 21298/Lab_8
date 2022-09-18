@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Rick And Morty</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Item recycler place, strings -->
+    <string name="separator_data">-</string>
+
+    <!-- Item, details character fragment -->
+    <string name="specie_label">Specie:</string>
+    <string name="status_label">Status:</string>
+    <string name="gender_label">Gender:</string>
+</resources>

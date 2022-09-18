@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_itemPlace"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_item_with_icon_height">
+    
+    <ImageView
+        android:id="@+id/image_itemPlace"
+        android:layout_width="@dimen/default_icon_size"
+        android:layout_height="@dimen/default_icon_size"
+        android:layout_marginStart="@dimen/margin_medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+    <TextView
+        android:id="@+id/text_itemPlace_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_large_text"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        tools:text="NAME"
+        app:layout_constraintStart_toEndOf="@id/image_itemPlace"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/text_itemPlace_specie"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+        android:id="@+id/text_itemPlace_specie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="SPECIE"
+        app:layout_constraintStart_toStartOf="@id/text_itemPlace_name"
+        app:layout_constraintEnd_toStartOf="@id/text_itemPlace_guion"
+        app:layout_constraintTop_toBottomOf="@id/text_itemPlace_name"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+    <TextView
+        android:id="@+id/text_itemPlace_guion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/separator_data"
+        android:layout_marginStart="5dp"
+        tools:text="-"
+        app:layout_constraintStart_toEndOf="@id/text_itemPlace_specie"
+        app:layout_constraintTop_toBottomOf="@id/text_itemPlace_name"
+        app:layout_constraintBottom_toBottomOf="parent" />
+    <TextView
+        android:id="@+id/text_itemPlace_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        tools:text="STATUS"
+        app:layout_constraintStart_toEndOf="@id/text_itemPlace_guion"
+        app:layout_constraintEnd_toStartOf="@id/text_itemPlace_guion2"
+        app:layout_constraintTop_toBottomOf="@id/text_itemPlace_name"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+    <TextView
+        android:id="@+id/text_itemPlace_guion2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/separator_data"
+        android:layout_marginStart="5dp"
+        tools:text="-"
+        app:layout_constraintStart_toEndOf="@id/text_itemPlace_status"
+        app:layout_constraintTop_toBottomOf="@id/text_itemPlace_name"
+        app:layout_constraintBottom_toBottomOf="parent" />
+    <TextView
+        android:id="@+id/text_itemPlace_gender"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toEndOf="@id/text_itemPlace_guion2"
+        app:layout_constraintTop_toBottomOf="@id/text_itemPlace_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="GENDER"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

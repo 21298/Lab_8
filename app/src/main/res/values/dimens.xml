@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_icon_size">45dp</dimen>
+    <dimen name="list_item_with_icon_height">56dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_large">45dp</dimen>
+    <dimen name="margin_large_text">10dp</dimen>
+
+    <!-- Character utilities -->
+    <dimen name="default_icon_size_character">130dp</dimen>
+    <dimen name="margin_TOP_labesl_characterDetails">10dp</dimen>
+
+</resources>
